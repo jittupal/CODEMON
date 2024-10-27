@@ -10,7 +10,7 @@ const AdminUsers = () => {
 
   const getAllUsersData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/admin/users', {
+      const response = await fetch('https://codemon-i5f0.onrender.com/api/admin/users', {
         method: 'GET',
         headers: {
           Authorization: authorizationToken,
@@ -26,7 +26,7 @@ const AdminUsers = () => {
 
   // delete user on delete button
   const deleteuser = async (id) => {
-    const response = await fetch(`http://localhost:5000/api/admin/users/delete/${id}`, {
+    const response = await fetch(`https://codemon-i5f0.onrender.com/api/admin/users/delete/${id}`, {
       method: 'DELETE',
       headers: {
         Authorization: authorizationToken,
