@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
   const userAuthentication = async () =>{
     setIsLoading(true);
    try {
-    const response = await fetch("http://localhost:5000/api/auth/user", {
+    const response = await fetch("https://codemon-i5f0.onrender.com/api/auth/user", {
       method: "GET",
       headers: {
         Authorization: authorizationToken,
@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }) => {
 
   const getCourse = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/data/course", {
+      const response = await fetch("https://codemon-i5f0.onrender.com/api/data/course", {
         method: "GET",
       });
 
