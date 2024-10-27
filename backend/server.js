@@ -20,7 +20,7 @@ const cors = require("cors");
 const app = express();
 
 const corsoptions = {
-    origin: "http://localhost:5173",
+    origin: "https://codemon-1.onrender.com",
     methods: "PUT, POST , DELETE, GET, PATCH, HEAD",
     credentials: true
 }
